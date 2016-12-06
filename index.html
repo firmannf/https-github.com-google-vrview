@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="vrview"></div>
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script>
+        window.addEventListener('load', onVrViewLoad)
+        function onVrViewLoad() {
+            var vrView = new VRView.Player('#vrview', {
+                image: 'img/unikom.JPG',
+                is_stereo: true
+            });
+        }
+    </script>
+</body>
+
+</html>
