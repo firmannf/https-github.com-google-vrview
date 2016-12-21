@@ -5,17 +5,22 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="vrview"></div>
+    <div id="vrview" style="width: 100%; height: 100%;s"></div>
     <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
     <script>
         window.addEventListener('load', onVrViewLoad)
         function onVrViewLoad() {
             var vrView = new VRView.Player('#vrview', {
-                image: 'img/unikom.JPG',
-                is_stereo: true
+                image: 'img/unikom.JPG'
             });
         }
     </script>
