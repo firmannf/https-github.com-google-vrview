@@ -2,28 +2,27 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        html {
-            padding: 0px;
-            margin: 0px;
-        }
-    </style>
+  <title>Unikom Apps VR View</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="vrview" style="width: 100%; height: 100%;s"></div>
-    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-    <script>
-        window.addEventListener('load', onVrViewLoad)
-        function onVrViewLoad() {
-            var vrView = new VRView.Player('#vrview', {
-                image: 'img/unikom.JPG'
-            });
-        }
-    </script>
+  <div id="error" class="dialog">
+    <div class="wrap">
+      <h1 class="title">Error</h1>
+      <p class="message">An unknown error occurred.</p>
+    </div>
+  </div>
+  <div id="play-overlay">
+    <img src="images/ic_play_arrow_white_24dp.svg" />
+  </div>
+  <a id="watermark" href="http://g.co/vr/view" target="_blank">
+    <img src="images/ic_info_outline_black_24dp.svg" />
+  </a>
+  <script src="build/three.js"></script>
+  <script src="build/embed.js"></script>
 </body>
 
 </html>
